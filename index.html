@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 d-flex justify-content-between align-items-center">
+            <img class="img-logo" src="imgs/logo.png" alt="Logo">
+            <h1>Coquetel Sem Álcool</h1>
+            <nav>
+              <div class="navbar-menu">
+                <a href="#">Home</a>
+                <a href="#coqueteis">Coquetéis</a>
+                <a href="#contato">Contato</a>
+                <a href="#endereco">Onde estar</a>
+                <span id="hoje" class="bg-white px-3 py-1"></span>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="coqueteis" class="mt-5">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <div class="card" style="width: 100%;">
+                <img class="card-img-top img-fluid cocktail-img mx-auto" src="imgs/1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Blue Sky</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" target="_blank" class="btn btn-cocktail">R$9,50</a>
+                  <br><i>*preço por taça</i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="card" style="width: 100%;">
+                <img class="card-img-top img-fluid cocktail-img mx-auto" src="imgs/2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Sweet Cream</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-cocktail">R$12,50</a>
+                  <br><i>*preço por taça</i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="card" style="width: 100%;">
+                <img class="card-img-top img-fluid cocktail-img mx-auto" src="imgs/3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Chapadóvisck</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-cocktail">R$11,00</a>
+                  <br><i>*preço por taça</i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+              <h3>Fale conosco</h3>
+              <form class="form-group p-5 bg-dark rounded" action="https://formspree.io/SEU-EMAIL"
+                    method="POST">
+                  <textarea rows="3" type="text" placeholder="Digite sua mensagem" name="name" class="form-control my-3"></textarea>
+                  <input type="email" placeholder="Digite seu email" name="email" class="form-control my-3">
+                  <input type="submit" value="Enviar" class="form-control my-3">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="endereco">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 p-0">
+              <!-- renderizar maps -->
+               <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 p-4 d-flex justify-content-around align-items-center">
+            <ul class="list-inline ul-footer">
+              <li>Perguntas Frequentes</li>
+              <li>Termos de Uso</li>
+              <li>Nosso Endereço</li>
+              <li>Mais</li>
+            </ul>
+            <ul class="list-inline ul-footer">
+              <li>Perguntas Frequentes</li>
+              <li>Termos de Uso</li>
+              <li>Nosso Endereço</li>
+              <li>Mais</li>
+            </ul>
+            <ul class="list-inline ul-footer">
+              <li><a href="#"><i class="fab fa-facebook fa-2x facebook-color"></i> Facebook</a></li>
+              <li><a href="#"><i class="fab fa-instagram fa-2x instagram-color"></i> Instagram</a></li>
+              <li><a href="#"><i class="fab fa-youtube fa-2x youtube-color"></i> Youtube</a></li>
+              <li><a href="#"><i class="fab fa-spotify fa-2x spotify-color"></i> Spotify</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <i id="topo" class="fas fa-arrow-circle-up ir-topo"></i>
+
+    <!-- jQuery 3.3.1 -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- Bootstrap 4 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Meu Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA492dQ0kXPhTTyleTnqyeJb94RROwdRt4&callback=initMap"
+    async defer></script>
+    <!-- Meu JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
